@@ -1,4 +1,4 @@
-const Characters = ({ characters }) => {
+const CharcatersReact = ({ characters }) => {
 	return (
 		<ul>
 			{characters.map(character => {
@@ -17,4 +17,4 @@ const Characters = ({ characters }) => {
 	);
 };
 
-export default Characters;
+export default CharcatersReact;

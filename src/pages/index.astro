@@ -1,6 +1,6 @@
 ---
-import Button from '../components/Button.tsx';
-import Charcaters from '../components/Characters.tsx';
+import ButtonMUI from '../components/Button.tsx';
+import CharcatersReact from '../components/Characters.tsx';
 import CounterVue from '../components/Counter.vue';
 import BaseLayout from '../layouts/BaseLayout.astro';
 const charcaters = await fetch('https://finalspaceapi.com/api/v0/character?limit=5').then((res) => res.json());
@@ -8,7 +8,7 @@ const charcaters = await fetch('https://finalspaceapi.com/api/v0/character?limit
 
 <BaseLayout title={'Testing 123'}>
 	<h1>Welcome!</h1>
-	<Button client:visible>React button</Button>
-	<Charcaters characters={charcaters}></Charcaters>
+	<ButtonMUI client:visible>React MUI button</ButtonMUI>
+	<CharcatersReact characters={charcaters}></CharcatersReact>
 	<CounterVue client:visible/>
 </BaseLayout>

@@ -1,8 +1,10 @@
-const Button = ({ children }) => {
+import Button from '@mui/material/Button';
+
+const ButtonMUI = ({ children }) => {
 	const handleClick = () => {
 		window.alert('Clicked');
 	};
-	return <button onClick={handleClick}>{children}</button>;
+	return <Button>{children}</Button>;
 };
 
 export default Button;
